@@ -1,0 +1,163 @@
+<?php include'connect.php'; ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+</head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
+}
+span {
+    color: blanchedalmond;
+    font-family: times;
+    text-decoration: none;
+}
+
+/* input fields */
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  display: inline-block;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:2;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  float: left;
+  width: 20%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: center;
+  width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  text-align: center;
+  float: center;
+  font-size: 12px;
+  text-decoration-color: #ff0000;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    .centerimg {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 20%;
+
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 150px) {
+  .cancelbtn, .signupbtn {
+     width: 50%;
+  }
+}
+</style>
+<body>
+	<!--<form action="action_page.php" style="border:2px solid #ccc">-->
+
+    <form  method="POST" action="Homepage.html" style="border:2px solid #ccc">
+    <div style="background-image:url('skyscrapper.jpg');">
+      
+  <div class="header">
+    <img src="bb.jpg" alt="Budgetbuddy" height="80" width="80"class="img" href="Homepage.html" >
+</div>
+  <div class="container">
+    <h3>Sign Up</h3>
+    <p>Please fill your details to create an account.</p>
+    <hr>
+    <label for="name"><b>First name </b>: </label>   
+     <input type="text" placeholder="Enter Firstname" name="firstname" required>  <br>
+
+<label for="name"><b>Second name:</b> </label>
+   <input type="text" placeholder="Enter Secondname" name="secondname" required>  <br>
+<label for="email"><b>Email:</b></label> 
+    <input id="email" name="Email" placeholder="Email" required="email"> <br> 
+<!--
+ 
+ ``      <input type="text" placeholder="Enter Email" name="email" required><br>-->
+<label for="password"><b>Password: </b></label>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+<!-- <label for="password-repeat"><b>Confirm Password:</b></label>
+    <input type="password" placeholder="Confirm Password" name="confirm" required><br> -->
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
+     <p>Already have an account?<a href="Login.html">Login here </p></a>
+
+    <div class="clearfix">
+      <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+      
+      <button type="submit" name="Signup">sign up</button>
+    </div>
+  </div>
+
+</p>
+</div>
+</form>
+
+</body>
+</html>
